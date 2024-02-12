@@ -5,12 +5,12 @@ on:
       - closed
     branches:
       - development
+      - master
   workflow_dispatch:
   push:
     branches:
       - master
       - development
-      - "david/*"
 jobs:
   deploy:
     runs-on: ubuntu-latest
